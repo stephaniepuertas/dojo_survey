@@ -8,37 +8,42 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <div class="container mt-3">
+        <div class="card justify-content">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name: </label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
+                </div>
+                <!-- dojo class div -->
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1"> Dojo Location: </label>
+                    <select class="form-control" id="exampleFormControlSelect1" >
+                        <option>Burbank</option>
+                        <option>San Jose</option>
+                        <option>Online</option>
+                    </select>
+                </div>
+                <!-- favorite language div -->
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1"> Favorite Language: select</label>
+                    <select class="form-control" id="exampleFormControlSelect1" >
+                        <option>Python</option>
+                        <option>Java </option>
+                        <option>C++</option>
+                        <option>Html</option>
+                        <option>CSS</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment:Text Area </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comment Optional"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <input type="submit" value="submit" class="btn btn-primary">
+                </div>
+            </form>
         </div>
-        <!-- dojo class div -->
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <!-- favorite language div -->
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </form>
+    </div>
 </body>
 </html>
