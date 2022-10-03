@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .container{
+            width: 970px;
+            margin: 0px;
+        }
+        .card_header{
+            text-align: center;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +19,14 @@
 <body>
     <div class="container mt-3">
         <div class="card justify-content">
+            <div class="card_header"><h1>Dojo Survey</h1></div>
             <form>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Name: </label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
                 </div>
                 <!-- dojo class div -->
-                <div class="form-group">
+                <div class="form-group mt-3">
                     <label for="exampleFormControlSelect1"> Dojo Location: </label>
                     <select class="form-control" id="exampleFormControlSelect1" >
                         <option>Burbank</option>
@@ -25,7 +35,7 @@
                     </select>
                 </div>
                 <!-- favorite language div -->
-                <div class="form-group">
+                <div class="form-group mt-3">
                     <label for="exampleFormControlSelect1"> Favorite Language: select</label>
                     <select class="form-control" id="exampleFormControlSelect1" >
                         <option>Python</option>
@@ -35,7 +45,7 @@
                         <option>CSS</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-3">
                     <label for="exampleFormControlTextarea1">Comment:Text Area </label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comment Optional"></textarea>
                 </div>

@@ -1,5 +1,7 @@
 from flask import Flask, render_template, session, request, redirect
 app = Flask(__name__)
+app.secret_key= '23498dwjwurdenwue3i35748393i1lkkdSDKJRIWEICJ20rdjsdjn2ieuurd'
+
 
 @app.route('/')
 def index():
@@ -13,7 +15,7 @@ def insert_info():
         session['comment']= request.form['comment']
         return redirect('/result')
 
-@app.route('/result')
+@app.get('/process')
 def result():
     return render_template('/result.html')
 
